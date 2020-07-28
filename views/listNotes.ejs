@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista PIs</title>
+</head>
+
+<body>
+    <h2>Lista de Pontos de Interesse<h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td>Titulo</td>
+                        <td>Conteudo</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% pis.forEach(function(data) { %>
+                    <tr>
+                        <td><%= data.titulo %></td>
+                        <td><%= data.conteudo %></td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+                <button><a href="/">Back</a></button>
+            </table>
+</body>
+
+</html>
